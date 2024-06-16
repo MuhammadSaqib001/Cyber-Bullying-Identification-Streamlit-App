@@ -4,3 +4,4 @@ pandas
 nltk
 emoji
 numpy
+Pillow
