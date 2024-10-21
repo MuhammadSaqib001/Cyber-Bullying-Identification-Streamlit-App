@@ -1,49 +1,73 @@
-# Cyberbullying-Tweet-Recognition-App https://cyberbullying-tweet-recognition-jayant-verma.streamlit.app/
+# Cyberbullying Tweet Recognition App
 
-This project involved analyzing tweets. 
+[Live Demo](https://cyberbullying-tweet-recognition-jayant-verma.streamlit.app/)
 
-By understanding the words involved in the tweet, we are going to predict whether a tweet is a cyberbullying tweet or not and if it is a cyberbullying tweet then predicting nature of the cyberbullying into 6 Categories:
-* Age
-* Ethnicity
-* Gender
-* Religion
-* Other Cyberbullying
+This project focuses on analyzing tweets to identify cyberbullying. Using natural language processing techniques, the app predicts whether a tweet is classified as cyberbullying and further categorizes it into one of six types:
 
-* Dataset Used : Cyberbullying Classification data from Kaggle ( https://lnkd.in/d7pfHGT8)
+- Age
+- Ethnicity
+- Gender
+- Religion
+- Other Cyberbullying
 
-* Approach:-
-1. Installing the required libraries and importing the data set using pandas was the first step.
-2. Initial review of the data and checked the provided data set for any missing values.
-3. Preformed Preprocessing of text which involved :
+## Dataset
+The dataset used for this project is the **Cyberbullying Classification** data from Kaggle. [Dataset Link](https://www.kaggle.com/datasets/d7pfHGT8)
 
-~ Removing emoji  
-~ Converting text to lowercase, removing (/r, /n characters), URLs,
-non-utf characters, Numbers, punctuations, stopwords  
-~ Removing Contractions  
-~ Cleaning Hashtags  
-~ Filter Special characters  
-~ Removing Multi-space characters  
-~ Stemming  
-~ Lemmatization  
+## Approach
 
-4. Handling Duplicates and removing them  
-5. Performed Exploratory Data Analysis  
-6. Train and test split  
-7. tf-idf Vectorization  
-8. Trying different base models :-
-~ Logistic Regression  
-~ Support Vector Classifier  
-~ Naive Bayes Classifier  
-~ Decision Tree Classifier  
-~ Random Forest Classifier  
-~ Ada Boost Classifier  
-9. Fine Tuning Support Vector Classifier  
-10. Model Evaluation and Saving the model  
-11. Created the Web App using Streamlit  
-12. Deployed Web App on Streamlit  
+1. **Library Installation & Data Import**  
+   - Installed required libraries and imported the dataset using `pandas`.
 
-* Libraries Used : pandas, numpy, matplotlib, seaborn, stats, scipy, re, pickle, string, image, collections, statsmodel, flask, nltk, emoji, wordcloud, streamlit
+2. **Data Review**  
+   - Conducted an initial review to check for missing values.
 
-* Deployment Platform : Streamlit
+3. **Text Preprocessing**  
+   Applied several preprocessing techniques to clean and prepare the text data:
+   - Removed emojis
+   - Converted text to lowercase and removed unwanted characters (e.g., `/r`, `/n`, URLs)
+   - Eliminated non-UTF characters, numbers, punctuation, and stopwords
+   - Handled contractions, hashtags, and special characters
+   - Removed multi-space characters
+   - Applied stemming and lemmatization
 
-* Kaggle : https://lnkd.in/dTe7PCqx
+4. **Handling Duplicates**  
+   - Identified and removed duplicate entries in the dataset.
+
+5. **Exploratory Data Analysis**  
+   - Performed data exploration to understand patterns and distributions.
+
+6. **Train-Test Split**  
+   - Split the data into training and testing sets.
+
+7. **TF-IDF Vectorization**  
+   - Applied TF-IDF vectorization to convert text data into numerical features.
+
+8. **Model Selection**  
+   - Tried different classification models:
+     - Logistic Regression
+     - Support Vector Classifier (SVC)
+     - Naive Bayes Classifier
+     - Decision Tree Classifier
+     - Random Forest Classifier
+     - AdaBoost Classifier
+
+9. **Model Tuning**  
+   - Fine-tuned the Support Vector Classifier for optimal performance.
+
+10. **Model Evaluation**  
+    - Evaluated model performance using standard metrics and saved the best-performing model.
+
+11. **Web App Creation**  
+    - Developed a user-friendly web application using Streamlit.
+
+12. **Deployment**  
+    - Deployed the web app on Streamlit.
+
+## Libraries Used
+- `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `re`, `nltk`, `emoji`, `wordcloud`, `streamlit`, `pickle`, `scikit-learn`
+
+## Deployment Platform
+- Streamlit
+
+## Kaggle Link
+The dataset can be accessed [here](https://www.kaggle.com/datasets/d7pfHGT8).
